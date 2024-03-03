@@ -14,6 +14,7 @@ class Customers_Report extends Controller
        return view('reports.customers_report',compact('sections'));
     }
 
+    
     public function searsh_customers(Request $request)
     {
         if ($request->Section && $request->product && $request->start_at =='' && $request->end_at =='' ) {
