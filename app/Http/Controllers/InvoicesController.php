@@ -29,11 +29,7 @@ class InvoicesController extends Controller
         return view('invoices.invoices',compact('invoices'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+   
     public function create()
     {
         $sections = sections::all();
